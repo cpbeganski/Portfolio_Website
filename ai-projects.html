@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <title>AI Projects | Christopher Beganski</title>
+    <meta name="description" content="AI and data science projects — BGH Scout job intelligence platform, MIT Applied AI capstone work, and applied machine learning projects.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='16' fill='%2314657E'/><text x='50%25' y='63%25' font-family='Helvetica,Arial,sans-serif' font-weight='700' font-size='46' fill='%23FFFFFF' text-anchor='middle'>CB</text></svg>">
+</head>
+<body>
+<div class="container">
+
+    <header>
+        <div class="header-content">
+            <a href="index.html"><img src="headshot.jpg" alt="Christopher Beganski" class="profile-img"></a>
+            <div class="header-text">
+                <h1>Christopher Beganski</h1>
+                <p class="subtitle">Data &amp; AI Consultant · Biopharma Analytics</p>
+                <p class="location">Littleton, Massachusetts</p>
+            </div>
+        </div>
+    </header>
+
+    <nav class="work-nav">
+        <a href="index.html">Home</a>
+        <a href="case-studies.html">Case Studies</a>
+        <a href="ai-projects.html" class="active">AI Projects</a>
+        <a href="community.html">Community</a>
+        <a href="Beganski_Christopher_Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+    </nav>
+
+    <section>
+        <p class="lede">Things I've built. Some are client work, some came out of the MIT program, and one started because I needed it myself. This page grows as I ship.</p>
+    </section>
+
+    <!-- ============================ Shipped ============================= -->
+    <section id="shipped">
+        <h2>In the Wild</h2>
+
+        <div class="card featured" id="bgh-scout">
+            <div class="card-meta">
+                <span>Co-founder</span><span class="sep">/</span><span>Live product</span><span class="sep">/</span><span>2026</span>
+            </div>
+            <h3><a href="https://www.bghscout.com" target="_blank" rel="noopener noreferrer">BGH Scout <i class="fa-solid fa-arrow-up-right-from-square" style="font-size:0.7em;"></i></a></h3>
+            <p>By the time a role reaches the major job boards, it is usually already flooded with applicants. The people I met while job searching were not short on talent or effort — they were short on visibility into openings that had not yet surfaced.</p>
+            <p>So I built the thing that was missing: an automated job intelligence platform that scrapes employer career sites directly, every day, and puts new postings in front of people before the boards catch up. Ben Greene and Ty Holland joined to turn it into a real product.</p>
+            <ul class="detail">
+                <li><strong>400+ employer career sites</strong> scraped daily across 14 industries.</li>
+                <li><strong>2,000+ new postings surfaced per day</strong>, delivered through a dedicated web application.</li>
+                <li>Scaled to <strong>120+ active users</strong>.</li>
+                <li>Includes ways to identify and connect with people inside the hiring companies.</li>
+            </ul>
+            <div class="outcome">Users have landed roles through postings the platform surfaced — including opportunities at small and mid-sized companies they would never have found by refreshing the big boards.</div>
+        </div>
+
+        <div class="card" id="medical-insights-ref">
+            <div class="card-meta">
+                <span>Client engagement</span><span class="sep">/</span><span>Production NLP + LLM</span><span class="sep">/</span><span>2026</span>
+            </div>
+            <h3>Medical Field Insight Classification &amp; Recommendation Pipeline</h3>
+            <p>A multi-stage system for a pharmaceutical client: an NLP classifier categorizes field observations against a Strategic Medical Plan, an LLM produces ranked and citation-backed recommended actions per objective, and a differential stage reports what changed since the previous cycle. In active production use.</p>
+            <p><a href="case-studies.html#medical-insights">Read the full case study →</a></p>
+        </div>
+    </section>
+
+    <!-- ======================= MIT program work ========================= -->
+    <section id="mit">
+        <h2>MIT Applied AI &amp; Data Science</h2>
+        <p style="margin-bottom:1.25rem;">Fourteen weeks through MIT Professional Education, completed January 2026. The projects below are the graded coursework; the full portfolio is <a href="https://www.mygreatlearning.com/eportfolio/christopher-beganski" target="_blank" rel="noopener noreferrer">published here</a>.</p>
+
+        <div class="card">
+            <div class="card-meta">
+                <span>Capstone</span><span class="sep">/</span><span>January 2026</span>
+            </div>
+            <h3>Marketing Campaign Customer Segmentation</h3>
+            <p>Analyzed customer data to understand buying behaviour and campaign response, grouping customers by income, spending patterns, family size and campaign acceptance using PCA and K-Means clustering. The resulting segments support more precise targeting and better campaign performance.</p>
+            <div class="tags" style="margin-top:0.9rem;">
+                <span>PCA</span><span>K-Means</span><span>Elbow method</span><span>Silhouette score</span><span>Standardization</span><span>EDA</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-meta">
+                <span>Elective project</span><span class="sep">/</span><span>December 2025</span>
+            </div>
+            <h3>Potential Customer Prediction</h3>
+            <p>Built classification models to predict which leads for an EdTech startup would convert to paid customers, using demographic detail and interaction behaviour. The work identified the factors driving conversion and produced lead profiles to focus marketing and sales effort.</p>
+            <div class="tags" style="margin-top:0.9rem;">
+                <span>Classification</span><span>Model evaluation</span><span>Data preprocessing</span><span>EDA</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-meta">
+                <span>Foundations project</span><span class="sep">/</span><span>October 2025</span>
+            </div>
+            <h3>FoodHub Delivery Data Analysis</h3>
+            <p>Examined order cost, food preparation time, delivery time and customer ratings across weekdays and weekends for a New York food delivery service, surfacing where delivery speed and restaurant performance could be improved.</p>
+            <div class="tags" style="margin-top:0.9rem;">
+                <span>Python</span><span>Pandas</span><span>Descriptive statistics</span><span>Data visualization</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="cta">
+        <h2>Get in Touch</h2>
+        <p>If you have a problem that looks like one of these, I'd be glad to talk it through.</p>
+        <div class="btn-row" style="margin-top:1.25rem;">
+            <a href="contact.html" class="btn"><i class="fa-solid fa-paper-plane"></i> Open Contact Form</a>
+            <a href="mailto:cpbeganski@gmail.com" class="btn btn-outline"><i class="fa-solid fa-envelope"></i> cpbeganski@gmail.com</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="links">
+            <a href="mailto:cpbeganski@gmail.com"><i class="fa-solid fa-envelope"></i> Email</a>
+            <a href="https://www.linkedin.com/in/chris-beganski/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+            <a href="https://www.bghscout.com" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-magnifying-glass"></i> BGH Scout</a>
+            <a href="Beganski_Christopher_Resume.pdf" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-pdf"></i> Resume (PDF)</a>
+        </div>
+        <p class="colophon">&copy; 2026 Christopher Beganski · Littleton, MA</p>
+    </footer>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <title>Case Studies | Christopher Beganski</title>
+    <meta name="description" content="Selected data, analytics and AI engagements across biopharma — production NLP/LLM systems, enterprise reporting platforms, and data governance programs.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='16' fill='%2314657E'/><text x='50%25' y='63%25' font-family='Helvetica,Arial,sans-serif' font-weight='700' font-size='46' fill='%23FFFFFF' text-anchor='middle'>CB</text></svg>">
+</head>
+<body>
+<div class="container">
+
+    <header>
+        <div class="header-content">
+            <a href="index.html"><img src="headshot.jpg" alt="Christopher Beganski" class="profile-img"></a>
+            <div class="header-text">
+                <h1>Christopher Beganski</h1>
+                <p class="subtitle">Data &amp; AI Consultant · Biopharma Analytics</p>
+                <p class="location">Littleton, Massachusetts</p>
+            </div>
+        </div>
+    </header>
+
+    <nav class="work-nav">
+        <a href="index.html">Home</a>
+        <a href="case-studies.html" class="active">Case Studies</a>
+        <a href="ai-projects.html">AI Projects</a>
+        <a href="community.html">Community</a>
+        <a href="Beganski_Christopher_Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+    </nav>
+
+    <section>
+        <p class="lede">Fifteen years of work, grouped by the kind of problem rather than the employer. Figures are the outcomes reported at the time of delivery.</p>
+    </section>
+
+    <!-- ============================ AI & NLP ============================ -->
+    <section id="ai-systems">
+        <h2>AI &amp; NLP Systems</h2>
+
+        <div class="card featured" id="medical-insights">
+            <div class="card-meta">
+                <span>Independent consulting</span><span class="sep">/</span><span>Pharmaceutical client</span><span class="sep">/</span><span>2026</span>
+            </div>
+            <h3>Medical Field Insight Classification &amp; Recommendation Pipeline</h3>
+            <p>A pharmaceutical client was collecting thousands of medical field insights a year — observations from the field that were being recorded but never systematically reviewed against strategy. The volume made manual analysis impractical, so the insight sat unused.</p>
+            <p>I designed and deployed a multi-stage AI pipeline to close that gap:</p>
+            <ol class="stages">
+                <li>An <strong>NLP classifier</strong> categorizes each field observation against the client's Strategic Medical Plan.</li>
+                <li>An <strong>LLM</strong> generates ranked, citation-backed recommended actions for each strategic objective.</li>
+                <li>A <strong>differential stage</strong> compares the previous cycle's recommendations against the new ones and reports what changed.</li>
+            </ol>
+            <p style="margin-top:1rem;">Classification accuracy improved through structured training data design, expert annotation standards, and custom stop-word management — translating client feedback directly into measurable gains rather than anecdotal tuning.</p>
+            <div class="outcome"><strong>The system is in active production use.</strong> The third stage matters most in practice: it means each cycle reports change rather than restating the same recommendations.</div>
+        </div>
+    </section>
+
+    <!-- ==================== Analytics & Automation ====================== -->
+    <section id="analytics">
+        <h2>Analytics &amp; Automation</h2>
+
+        <div class="card" id="reporting-platform">
+            <div class="card-meta">
+                <span>Sarepta Therapeutics</span><span class="sep">/</span><span>Associate Director, IT Data Engineering &amp; Analytics</span><span class="sep">/</span><span>2024–2025</span>
+            </div>
+            <h3>Enterprise Automated Reporting, End to End</h3>
+            <p>IT subject matter expert for Power BI and Power Automate, owning the full lifecycle of enterprise automated reporting — from requirements gathering through production publication and daily refresh.</p>
+            <ul class="detail">
+                <li>Built an interactive <strong>Power BI Procurement report with role-based cost center access</strong>, giving the team secure self-service into its own data.</li>
+                <li>Streamlined Drug Safety partner oversight using AWS S3, Power Automate, Alteryx, Informatica and Snowflake.</li>
+                <li>Led the Power BI migration from Alteryx to Informatica for Snowflake reporting.</li>
+                <li>Engineered automated Veeva Vault API extractions enabling continuous, cost-free data refresh across reporting platforms.</li>
+            </ul>
+            <div class="outcome"><strong>$150K+ annual savings</strong> from the platform migration · <strong>20+ hours per week</strong> returned to Procurement · <strong>100+ hours per month</strong> of Drug Safety reporting effort eliminated.</div>
+        </div>
+
+        <div class="card" id="medical-affairs">
+            <div class="card-meta">
+                <span>Biogen</span><span class="sep">/</span><span>Associate Director, Worldwide Medical Analytics &amp; Reporting Lead</span><span class="sep">/</span><span>2018–2021</span>
+            </div>
+            <h3>Building the Analytics Function for Global Medical Affairs</h3>
+            <p>Led a four-person, multi-continent operations analytics team delivering KPIs and decision-support data across Global Medical Affairs, with ownership of data architecture, report publishing and platform governance for a global user base.</p>
+            <ul class="detail">
+                <li>Defined and published the critical Medical Affairs KPIs in collaboration with global stakeholders.</li>
+                <li>Drove the monthly Executive Management reporting used for strategic direction and risk management.</li>
+                <li>Developed MSL performance reports from Veeva data, quantifying field activity for management decision-making.</li>
+                <li>Replaced outsourced third-party metrics with in-house reporting.</li>
+            </ul>
+            <div class="outcome"><strong>$200K+ in annual savings</strong> from bringing metrics in-house, while cutting concept-to-production time from <strong>months to days</strong>.</div>
+        </div>
+
+        <div class="card" id="operations-analytics">
+            <div class="card-meta">
+                <span>Biogen</span><span class="sep">/</span><span>Senior Process Lead, Operations Analytics</span><span class="sep">/</span><span>2016–2018</span>
+            </div>
+            <h3>Centralizing Operational Metrics Across Manufacturing, Quality and Supply Chain</h3>
+            <p>Core team member of the PO&amp;T Operations Analytics group, consolidating company-wide operational metrics into a single platform spanning manufacturing, quality and supply chain.</p>
+            <ul class="detail">
+                <li>Mapped the end-to-end product release process, improving release date prediction accuracy and identifying the bottlenecks that were extending cycle time.</li>
+                <li>Developed Tableau dashboards standardized across multiple global sites, enabling rapid issue identification and self-service exploration.</li>
+                <li>Chaired the governance committee overseeing KPI standardization and best practices, establishing cross-site consistency and confidence in the numbers.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- ============== Data Platforms, Quality & Governance ============== -->
+    <section id="governance">
+        <h2>Data Platforms, Quality &amp; Governance</h2>
+
+        <div class="card" id="qa-data">
+            <div class="card-meta">
+                <span>Sarepta Therapeutics</span><span class="sep">/</span><span>Associate Director, QA Business Analyst</span><span class="sep">/</span><span>2022–2024</span>
+            </div>
+            <h3>Making Regulated R&amp;D Data Usable</h3>
+            <p>Built a data integration program enriching internal and external R&amp;D data sources to enable faster analytics, targeted risk assessment and compliant reporting across GCP, GLP and GVP functions.</p>
+            <ul class="detail">
+                <li>Designed an automated training compliance notification system with escalating multi-tier managerial alerts, significantly improving departmental compliance rates.</li>
+                <li>Delivered automated QA compliance reports identifying Veeva documents, CAPAs, Change Controls and Deviations impacted by employee turnover — closing a compliance gap created by the absence of a Workday–Veeva integration.</li>
+                <li>Trained staff on Power BI best practices so teams could automate their own reporting locally.</li>
+                <li>Redesigned the requirements-to-publication workflow end to end.</li>
+            </ul>
+            <div class="outcome"><strong>40+ hours per week</strong> saved across teams through localized data automation · report cycle time reduced from <strong>weeks to days</strong>.</div>
+        </div>
+
+        <div class="card" id="quality-ops">
+            <div class="card-meta">
+                <span>Biogen</span><span class="sep">/</span><span>Staff Associate, Global Quality Operations</span><span class="sep">/</span><span>2010–2016</span>
+            </div>
+            <h3>Founding the Quality Operations Data Function</h3>
+            <p>Founding member of the Quality Operations function and the corporate point of contact for quality systems data collection, integration and reporting across clinical and commercial manufacturing.</p>
+            <ul class="detail">
+                <li>Conceptualized and built a project tracking system giving unified metrics and visibility across geographically distributed Supply Chain Quality groups.</li>
+                <li>Performed managerial release of clinical and commercial Drug Substance, Drug Product and Finished Goods for both large and small molecule products.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- ============================ Toolkit ============================= -->
+    <section id="toolkit">
+        <h2>Toolkit</h2>
+
+        <div class="tag-group">
+            <h4>Business Intelligence &amp; Reporting</h4>
+            <div class="tags">
+                <span>Power BI</span><span>Tableau</span><span>DAX</span><span>Snowflake</span><span>Alation</span><span>KPI development</span><span>Dashboard design</span><span>Automated reporting pipelines</span><span>Self-service analytics</span>
+            </div>
+        </div>
+
+        <div class="tag-group">
+            <h4>Data Architecture, Engineering &amp; Integration</h4>
+            <div class="tags">
+                <span>Informatica</span><span>Alteryx</span><span>AWS</span><span>ETL / ELT</span><span>Data modeling</span><span>Data lineage</span><span>Master data management</span><span>REST API integration</span><span>Data governance</span>
+            </div>
+        </div>
+
+        <div class="tag-group">
+            <h4>AI, Automation &amp; Emerging Technology</h4>
+            <div class="tags">
+                <span>LLM application development</span><span>NLP</span><span>GenAI</span><span>Python</span><span>Predictive analytics</span><span>Supervised learning</span><span>Text classification</span><span>Clustering</span><span>Power Automate</span>
+            </div>
+        </div>
+
+        <div class="tag-group">
+            <h4>Quality Systems &amp; Compliance</h4>
+            <div class="tags">
+                <span>GMP</span><span>GCP</span><span>GLP</span><span>GVP</span><span>QMS</span><span>Data integrity</span><span>CAPA</span><span>Change control</span><span>Audit management</span><span>Veeva</span><span>REDICA</span>
+            </div>
+        </div>
+
+        <div class="tag-group">
+            <h4>Leadership &amp; Delivery</h4>
+            <div class="tags">
+                <span>Cross-functional leadership</span><span>Stakeholder management</span><span>IT business partnership</span><span>Change management</span><span>Solution architecture</span><span>Agile</span><span>Vendor management</span><span>Lean / Six Sigma</span><span>Jira</span><span>Confluence</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="education">
+        <h2>Education &amp; Certifications</h2>
+        <div class="role">
+            <div class="role-head">
+                <h4>Applied AI and Data Science Program</h4>
+                <span class="dates">Completed January 2026</span>
+            </div>
+            <span class="org">MIT Professional Education</span>
+        </div>
+        <div class="role">
+            <div class="role-head">
+                <h4>Master of Business Administration, Operations focus</h4>
+            </div>
+            <span class="org">University of Massachusetts Boston</span>
+        </div>
+        <div class="role">
+            <div class="role-head">
+                <h4>Master of Science, Chemical Engineering</h4>
+            </div>
+            <span class="org">University of Massachusetts Lowell</span>
+        </div>
+        <div class="role">
+            <div class="role-head">
+                <h4>Bachelor of Science, Chemical Engineering, <em>cum laude</em></h4>
+            </div>
+            <span class="org">University of Massachusetts Lowell</span>
+        </div>
+    </section>
+
+    <section id="cta">
+        <h2>Get in Touch</h2>
+        <div class="btn-row">
+            <a href="contact.html" class="btn"><i class="fa-solid fa-paper-plane"></i> Open Contact Form</a>
+            <a href="Beganski_Christopher_Resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline"><i class="fa-solid fa-file-pdf"></i> Download Resume</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="links">
+            <a href="mailto:cpbeganski@gmail.com"><i class="fa-solid fa-envelope"></i> Email</a>
+            <a href="https://www.linkedin.com/in/chris-beganski/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+            <a href="https://www.bghscout.com" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-magnifying-glass"></i> BGH Scout</a>
+            <a href="Beganski_Christopher_Resume.pdf" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-pdf"></i> Resume (PDF)</a>
+        </div>
+        <p class="colophon">&copy; 2026 Christopher Beganski · Littleton, MA</p>
+    </footer>
+
+</div>
+</body>
+</html>

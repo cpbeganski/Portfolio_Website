@@ -4,581 +4,126 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="referrer" content="strict-origin-when-cross-origin">
-    <meta name="google-site-verification" content="AOjUF_ZG2-X97gKxR1BzcbHFrVz4u-F_DC3IwJ36lWE" />
-    <title>Chris Beganski | Analytics Consult Focusing on AI</title>
-    
-    <!-- Broadsheet Editorial Fonts from Google -->
+    <title>Christopher Beganski | Data &amp; AI Consultant</title>
+    <meta name="description" content="Data and AI consultant with 15+ years in biopharma and life sciences. NLP/LLM systems, enterprise analytics, and the data platforms behind them.">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400&family=Playfair+Display:ital,wght@0,600;0,800;0,900;1,600&family=Inter:wght@600;700&display=swap" rel="stylesheet">
-
-    <!-- Font Awesome for Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    
-    <!-- Master Stylesheet -->
     <link rel="stylesheet" href="styles.css">
 
-    <!-- White "AB" on Black Background Inline Favicon -->
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%23111111'/><text x='50%' y='64%' font-family='serif' font-weight='900' font-size='52' fill='%23FFFFFF' text-anchor='middle'>AB</text></svg>">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='16' fill='%2314657E'/><text x='50%25' y='63%25' font-family='Helvetica,Arial,sans-serif' font-weight='700' font-size='46' fill='%23FFFFFF' text-anchor='middle'>CB</text></svg>">
 
-    <!-- Open Graph / Social Media Preview Meta Tags -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="André Beganski | Business & Crypto Reporter">
-    <meta property="og:description" content="Business and economics reporter specializing in digital assets, institutional trends, and financial reporting.">
-    <meta property="og:image" content="Headshot.jpg">
-    <meta property="og:url" content="https://andrebeganski.github.io/">
-
-    <!-- Twitter Card Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="André Beganski | Business & Crypto Reporter">
-    <meta name="twitter:description" content="Business and economics reporter specializing in digital assets, institutional trends, and financial reporting.">
-    <meta name="twitter:image" content="Headshot.jpg">
-
-    <!-- First-Visit Check Script (Tip: add ?reset=true to your URL to test the animation again) -->
-    <script>
-        const urlParams = new URLSearchParams(window.location.search);
-        if (urlParams.has('reset')) {
-            localStorage.removeItem('siteVisited');
-        }
-
-        if (localStorage.getItem('siteVisited')) {
-            document.documentElement.classList.add('returning-visitor');
-        } else {
-            localStorage.setItem('siteVisited', 'true');
-        }
-    </script>
-
-    <style>
-        :root {
-            --paper: #FFFFFF;
-            --ink: #111111;
-            --gray: #555555;
-            --border: #DDDDDD;
-        }
-
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            background-color: var(--paper);
-            color: var(--ink);
-            font-family: 'Lora', serif;
-            line-height: 1.5;
-            padding: 1.5rem;
-            -webkit-font-smoothing: antialiased;
-        }
-
-        .container {
-            max-width: 760px;
-            margin: 0 auto;
-        }
-
-        /* Compact Masthead Styling */
-        header {
-            margin-bottom: 2rem;
-            padding: 1.25rem 0;
-            border-top: 3px solid var(--ink);
-            border-bottom: 1px solid var(--ink);
-            position: relative;
-        }
-
-        header::after {
-            content: '';
-            position: absolute;
-            bottom: 2px;
-            left: 0;
-            right: 0;
-            height: 1px;
-            background: var(--ink);
-        }
-
-        .header-content {
-            display: flex;
-            align-items: center;
-            gap: 1.25rem;
-        }
-
-        /* Animations */
-        @keyframes revealColor {
-            0% { filter: grayscale(100%); }
-            100% { filter: grayscale(20%); }
-        }
-
-        @keyframes fadeInText {
-            0% { opacity: 0; transform: translateY(4px); }
-            100% { opacity: 1; transform: translateY(0); }
-        }
-
-        .profile-img {
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 1px solid var(--border);
-            flex-shrink: 0;
-            filter: grayscale(20%);
-        }
-
-        h1 {
-            font-size: 2.75rem;
-            font-weight: 900;
-            margin: 0 0 0.1rem 0;
-            letter-spacing: -0.03em;
-            line-height: 1;
-        }
-
-        .subtitle {
-            font-family: 'Inter', sans-serif;
-            font-size: 0.9rem;
-            color: var(--gray);
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-            margin: 0;
-        }
-
-        /* FIRST-TIME VISITOR ANIMATION OVERRIDES */
-        html:not(.returning-visitor) img.profile-img {
-            filter: grayscale(100%); /* !important removed */
-            animation: revealColor 2.5s ease-out forwards !important;
-        }
-
-        html:not(.returning-visitor) .header-text h1 {
-            opacity: 0; /* !important removed */
-            animation: fadeInText 1.0s ease-out 0.4s forwards !important;
-        }
-
-        html:not(.returning-visitor) .header-text .subtitle {
-            opacity: 0; /* !important removed */
-            animation: fadeInText 1.0s ease-out 0.8s forwards !important;
-        }
-
-        /* RETURNING VISITOR STATES (Forces full visibility immediately) */
-        html.returning-visitor img.profile-img {
-            filter: grayscale(20%) !important;
-        }
-
-        html.returning-visitor .header-text h1,
-        html.returning-visitor .header-text .subtitle {
-            opacity: 1 !important;
-            transform: none !important;
-            animation: none !important;
-        }
-
-        h1, h2, h3 {
-            font-family: 'Playfair Display', serif;
-            color: var(--ink);
-        }
-
-        section {
-            margin-bottom: 2.25rem;
-        }
-
-        /* Section Dividers */
-        h2 {
-            font-size: 1.5rem;
-            font-weight: 800;
-            margin-bottom: 0.85rem;
-            padding-bottom: 0.35rem;
-            border-bottom: 2px solid var(--ink);
-            text-transform: uppercase;
-            letter-spacing: 0.02em;
-        }
-
-        p {
-            margin-bottom: 0.75rem;
-            font-size: 1.05rem;
-        }
-
-        /* About Section text */
-        #about p {
-            font-size: 0.95rem;
-            line-height: 1.55;
-            margin-bottom: 1rem;
-        }
-        
-        #about p:last-child {
-            margin-bottom: 0;
-        }
-
-        /* Navigation Bar */
-        .work-nav {
-            display: flex;
-            justify-content: space-between; 
-            align-items: center;
-            margin-top: 1.25rem;
-            margin-bottom: 2rem;
-            padding: 0.6rem 1rem;
-            border-top: 1px solid var(--ink);
-            border-bottom: 1px solid var(--ink);
-        }
-
-        .work-nav a {
-            font-family: 'Inter', sans-serif;
-            font-size: 0.85rem;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 0.06em;
-            color: var(--ink);
-            text-decoration: none;
-            transition: color 0.2s ease;
-        }
-
-        .work-nav a:hover,
-        .work-nav a.active {
-            text-decoration: underline;
-            text-underline-offset: 3px;
-        }
-
-        /* Clips Section */
-        .clip {
-            margin-bottom: 1.5rem;
-        }
-
-        .clip-content {
-            display: flex;
-            gap: 1.25rem;
-            align-items: center;
-        }
-
-        .clip-text {
-            flex: 1;
-        }
-
-        /* Standard Article Thumbnails */
-        .clip-thumb {
-            width: 150px;
-            height: 95px;
-            object-fit: cover;
-            border: 1px solid var(--border);
-            flex-shrink: 0;
-        }
-
-        .clip-content a:first-child {
-            display: block;
-            overflow: hidden;
-            flex-shrink: 0;
-        }
-        
-        /* Prominent Hero Clip Styles */
-        .clip-hero {
-            margin-bottom: 2rem;
-            border-bottom: 1px solid var(--border);
-            padding-bottom: 1.75rem;
-        }
-
-        .clip-hero .clip-content {
-            gap: 1.5rem;
-            align-items: center;
-        }
-
-        .clip-hero .clip-thumb {
-            width: 250px;
-            height: 155px;
-            object-fit: cover;
-        }
-        
-        .clip-hero h3 {
-            font-size: 1.5rem; 
-            margin-bottom: 0.3rem;
-        }
-        
-        .clip-hero p {
-            font-size: 1.05rem; 
-        }
-
-        /* Standard Clip Headlines */
-        .clip h3 {
-            font-size: 1.35rem;
-            font-weight: 800;
-            margin-bottom: 0.2rem;
-            line-height: 1.25;
-        }
-
-        .clip h3 a {
-            color: var(--ink);
-            text-decoration: none;
-            transition: color 0.2s ease;
-        }
-
-        .clip h3 a:hover {
-            color: var(--gray);
-            text-decoration: underline;
-            text-decoration-thickness: 2px;
-            text-underline-offset: 3px;
-        }
-
-        .clip-meta {
-            font-family: 'Inter', sans-serif;
-            font-size: 0.8rem;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-            color: var(--gray);
-            margin-bottom: 0.3rem;
-            font-weight: 700;
-        }
-
-        .clip-meta span {
-            display: inline-block;
-        }
-
-        /* Contact Section Styling */
-        .contact-box {
-            border: 1px solid var(--ink);
-            padding: 1.5rem;
-            background: #FAFAFA;
-            margin-top: 1.5rem;
-        }
-
-        .btn-editorial {
-            font-family: 'Inter', sans-serif;
-            display: inline-block;
-            background: var(--ink);
-            color: var(--paper);
-            padding: 0.6rem 1.25rem;
-            text-transform: uppercase;
-            font-size: 0.8rem;
-            font-weight: 700;
-            letter-spacing: 0.06em;
-            text-decoration: none;
-            margin-top: 0.75rem;
-            transition: opacity 0.2s ease, transform 0.2s ease;
-        }
-
-        .btn-editorial:hover {
-            opacity: 0.85;
-            text-decoration: none;
-            transform: translateY(-1px);
-        }
-
-        /* Footer & Socials */
-        footer {
-            border-top: 1px solid var(--ink);
-            padding-top: 1.25rem;
-            margin-top: 2.5rem;
-            position: relative;
-        }
-
-        footer::before {
-            content: '';
-            position: absolute;
-            top: 2px;
-            left: 0;
-            right: 0;
-            height: 1px;
-            background: var(--ink);
-        }
-
-        .links {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1rem 1.5rem;
-            margin-bottom: 1.5rem;
-        }
-
-        .links a {
-            font-family: 'Inter', sans-serif;
-            color: var(--ink);
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 0.85rem;
-            text-transform: uppercase;
-            letter-spacing: 0.03em;
-            display: inline-flex;
-            align-items: center;
-            gap: 0.35rem;
-            transition: opacity 0.2s ease;
-        }
-
-        .links a i {
-            font-size: 0.95rem;
-            color: var(--ink);
-            transition: transform 0.2s ease;
-        }
-
-        .links a:hover {
-            opacity: 0.7;
-            text-decoration: underline;
-            text-underline-offset: 3px;
-        }
-        
-        .links a:hover i {
-            transform: scale(1.1);
-        }
-        
-        .colophon {
-            text-align: center;
-            font-family: 'Inter', sans-serif;
-            font-size: 0.75rem;
-            color: var(--gray);
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-        }
-
-        /* Responsive tweak for phones */
-        @media (max-width: 600px) {
-            .header-content {
-                flex-direction: column;
-                text-align: center;
-                gap: 1rem;
-            }
-            .work-nav {
-                flex-direction: column;
-                gap: 0.5rem;
-                padding: 0.75rem 1rem;
-            }
-            .clip-content {
-                flex-direction: column;
-            }
-            .clip-content a:first-child {
-                width: 100%;
-            }
-            .clip-thumb, .clip-hero .clip-thumb {
-                width: 100%;
-                height: 180px;
-            }
-            h1 { font-size: 2.25rem; }
-            body { padding: 1.25rem 1rem; }
-        }
-    </style>
+    <meta property="og:title" content="Christopher Beganski | Data &amp; AI Consultant">
+    <meta property="og:description" content="Data and AI consultant with 15+ years in biopharma and life sciences. NLP/LLM systems, enterprise analytics, and the data platforms behind them.">
+    <meta property="og:image" content="headshot.jpg">
+    <meta name="twitter:card" content="summary">
 </head>
 <body>
+<div class="container">
 
-    <div class="container">
-        <header>
-            <div class="header-content">
-                <a href="index.html">
-                    <img src="Headshot.jpg" alt="André Beganski" class="profile-img">
-                </a>
-                <div class="header-text">
-                    <h1>Chris Beganski</h1>
-                    <p class="subtitle">Analytics Consultant</p>
-                </div>
+    <header>
+        <div class="header-content">
+            <a href="index.html"><img src="headshot.jpg" alt="Christopher Beganski" class="profile-img"></a>
+            <div class="header-text">
+                <h1>Christopher Beganski</h1>
+                <p class="subtitle">Data &amp; AI Consultant · Biopharma Analytics</p>
+                <p class="location">Littleton, Massachusetts</p>
             </div>
-        </header>
+        </div>
+    </header>
 
-        <!-- Navigation with elevated Resume link -->
-        <nav class="work-nav">
-            <a href="index.html" class="active">Home</a>
-            <a href="writing.html">Writing</a>
-            <a href="photography.html">Photography</a>
-            <a href="broadcast.html">Broadcast Media</a>
-            <a href="Beganski_Andre_Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
-        </nav>
+    <nav class="work-nav">
+        <a href="index.html" class="active">Home</a>
+        <a href="case-studies.html">Case Studies</a>
+        <a href="ai-projects.html">AI Projects</a>
+        <a href="community.html">Community</a>
+        <a href="Beganski_Christopher_Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+    </nav>
 
-        <section id="about">
-            <h2>About</h2>
-            <p>For years, I covered crypto at <i><strong>Decrypt</strong></i> — from Wall Street's cautious embrace of stablecoins to the controversial rise of prediction markets and the trial of FTX co-founder Sam Bankman-Fried. Previously, my work has appeared in <strong><i>The New York Times</strong></i>, the <strong><i>Daily News</strong></i>, and <strong><i>Coinage</strong></i>.
-       </section>
+    <section id="about">
+        <h2>About</h2>
+        <p class="lede">The problems worth solving usually involve data that already exists but isn't being used — insights sitting unreviewed, workflows consuming expert time, systems that don't talk to each other.</p>
+        <p>Across 15+ years in biopharma and life sciences, the work has been the same: find where the value is buried, build something to surface it, and make it stick. From enterprise analytics platforms to production AI systems, the common thread is translating complex data environments into decisions that move organizations forward.</p>
+        <p>I go deep on the technical work, align stakeholders at any level, and lead the team that delivers.</p>
+    </section>
 
-        <section id="clips">
-            <h2>Featured Work</h2>
-            
-            <!-- Hero Clip 1: Investigation -->
-            <div class="clip clip-hero">
-                <div class="clip-content">
-                    <a href="https://decrypt.co/356972/brock-pierce-relationship-jeffrey-epstein-deeper-anyone-knew" target="_blank" rel="noopener noreferrer">
-                        <img src="Brock.jpg" alt="Brock Pierce Article Thumbnail" class="clip-thumb">
-                    </a>
-                    <div class="clip-text">
-                        <div class="clip-meta">
-                            <span>Wrote • Feb. 4, 2026</span>
-                        </div>
-                        <h3><a href="https://decrypt.co/356972/brock-pierce-relationship-jeffrey-epstein-deeper-anyone-knew" target="_blank" rel="noopener noreferrer">Brock Pierce's Relationship With Jeffrey Epstein Went Deeper Than Anyone Knew</a></h3>
-                        <p>Convicted sex offender Jeffrey Epstein was involved in Tether co-founder Brock Pierce's personal life.</p>
-                    </div>
-                </div>
+    <section id="numbers">
+        <h2>By the Numbers</h2>
+        <div class="stats">
+            <div class="stat">
+                <span class="figure">15+</span>
+                <span class="label">Years in biopharma &amp; life sciences</span>
             </div>
-
-            <!-- Hero Clip 2: Photo Essay -->
-            <div class="clip clip-hero">
-                <div class="clip-content">
-                    <a href="https://www.nytimes.com/2019/09/26/automobiles/auto-strikes-history.html" target="_blank" rel="noopener noreferrer">
-                        <img src="Detroit.jpg" alt="New York Times Auto Strikes Photo Essay Thumbnail" class="clip-thumb">
-                    </a>
-                    <div class="clip-text">
-                        <div class="clip-meta">
-                            <span>Curated & Wrote • Sept. 26, 2019</span>
-                        </div>
-                        <h3><a href="https://www.nytimes.com/2019/09/26/automobiles/auto-strikes-history.html" target="_blank" rel="noopener noreferrer">Occupy Detroit: A Look at 90 Years of Auto Strikes</a></h3>
-                        <p>Walkouts and sit-ins by the United Automobile Workers secured contracts that built the middle class.</p>
-                    </div>
-                </div>
+            <div class="stat">
+                <span class="figure">$350K+</span>
+                <span class="label">In annual savings delivered</span>
             </div>
-
-            <!-- Standard Clip 1 -->
-            <div class="clip">
-                <div class="clip-content">
-                    <a href="https://decrypt.co/345886/coinbase-disrupts-bitcoin-backed-lending-low-bar-servicing-americans" target="_blank" rel="noopener noreferrer">
-                        <img src="Coinbase.jpg" alt="Coinbase Article Thumbnail" class="clip-thumb">
-                    </a>
-                    <div class="clip-text">
-                        <div class="clip-meta">
-                            <span>Wrote • Oct. 28, 2025</span>
-                        </div>
-                        <h3><a href="https://decrypt.co/345886/coinbase-disrupts-bitcoin-backed-lending-low-bar-servicing-americans" target="_blank" rel="noopener noreferrer">Coinbase Disrupts Bitcoin Backed Lending With Low Bar for Servicing Americans</a></h3>
-                        <p>Coinbase's Bitcoin-backed lending service relies on the permissionless nature of DeFi, but there's a catch.</p>
-                    </div>
-                </div>
+            <div class="stat">
+                <span class="figure">100+</span>
+                <span class="label">Hours per month of reporting effort eliminated</span>
             </div>
-
-            <!-- Standard Clip 2 -->
-            <div class="clip">
-                <div class="clip-content">
-                    <a href="https://decrypt.co/369479/how-president-trump-immigration-order-feed-stablecoin-bitcoin-atms" target="_blank" rel="noopener noreferrer">
-                        <img src="Trump.jpg" alt="Trump Article Thumbnail" class="clip-thumb">
-                    </a>
-                    <div class="clip-text">
-                        <div class="clip-meta">
-                            <span>Wrote • May 31, 2026</span>
-                        </div>
-                        <h3><a href="https://decrypt.co/369479/how-president-trump-immigration-order-feed-stablecoin-bitcoin-atms" target="_blank" rel="noopener noreferrer">How President Trump's Immigration Order Will Feed the Stablecoin Economy, Bitcoin ATMs</a></h3>
-                        <p>When the Trump family faced pressure from banks, it embraced crypto. Now, immigrants face a similar choice.</p>
-                    </div>
-                </div>
+            <div class="stat">
+                <span class="figure">2,000+</span>
+                <span class="label">Job postings surfaced daily by BGH Scout</span>
             </div>
+        </div>
+    </section>
 
-            <!-- Standard Clip 3 -->
-            <div class="clip">
-                <div class="clip-content">
-                    <a href="https://www.coinage.media/s3/why-am-i-in-zambia-separating-indxcoin-and-church" target="_blank" rel="noopener noreferrer">
-                        <img src="Zambia.jpg" alt="Coinage Media Zambia Video Thumbnail" class="clip-thumb">
-                    </a>
-                    <div class="clip-text">
-                        <div class="clip-meta">
-                            <span>Produced • April 11, 2024</span>
-                        </div>
-                        <h3><a href="https://www.coinage.media/s3/why-am-i-in-zambia-separating-indxcoin-and-church" target="_blank" rel="noopener noreferrer">Why Am I in Zambia? Separating INDXcoin and Church</a></h3>
-                        <p>Pastor Eli Regalado once touted INDXcoin as a divine digital asset. When a Colorado watchdog stepped in, he flew to Zambia.</p>
-                    </div>
-                </div>
+    <section id="selected">
+        <h2>Selected Work</h2>
+
+        <div class="card featured">
+            <div class="card-meta">
+                <span>AI &amp; NLP</span><span class="sep">/</span><span>Pharmaceutical client</span><span class="sep">/</span><span>In production</span>
             </div>
-            
-        </section>
+            <h3><a href="case-studies.html#medical-insights">Turning Thousands of Medical Field Insights Into Ranked, Cited Actions</a></h3>
+            <p>A multi-stage pipeline that classifies medical field observations against a client's Strategic Medical Plan, generates citation-backed recommended actions per objective, and reports what changed since the last run.</p>
+            <div class="outcome"><strong>In active production use</strong> — accuracy improved iteratively through structured training data design, expert annotation standards, and custom stop-word management.</div>
+        </div>
 
-        <section id="contact">
-            <h2>Get in Touch</h2>
-            <div style="display: flex; justify-content: space-evenly; width: 100%;">
-                <a href="contact.html" class="btn-editorial"><i class="fa-solid fa-paper-plane" style="margin-right: 6px;"></i> Open Contact Form</a>
-                <a href="https://calendar.app.google/BMsUF5dHbjo3s1t37" target="_blank" rel="noopener noreferrer" class="btn-editorial btn-editorial-outline"><i class="fa-solid fa-calendar-days" style="margin-right: 6px;"></i> Schedule a Meeting</a>
+        <div class="card featured">
+            <div class="card-meta">
+                <span>Product</span><span class="sep">/</span><span>Co-founder</span><span class="sep">/</span><span>Live</span>
             </div>
-        </section>
+            <h3><a href="ai-projects.html#bgh-scout">BGH Scout — Automated Job Intelligence</a></h3>
+            <p>A platform that scrapes 400+ employer career sites daily and surfaces the roles that never make it to the major job boards in time. Built with Ben Greene and Ty Holland after my own job search made the gap obvious.</p>
+            <div class="outcome"><strong>2,000+ new postings per day</strong> across 14 industries, serving <strong>120+ active users</strong> through a dedicated web application.</div>
+        </div>
 
-        <footer>
-            <div class="links">
-                <a href="mailto:andrebeganski@gmail.com"><i class="fa-solid fa-envelope"></i> Email</a>
-                <a href="https://x.com/andrebeganski" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-x-twitter"></i> X / Twitter</a>
-                <a href="https://www.linkedin.com/in/beganski/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
-                <a href="https://muckrack.com/andre-beganski" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-newspaper"></i> Muck Rack</a>
-                <a href="https://www.instagram.com/andrebeganski/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i> Instagram</a>
-                <a href="Beganski_Andre_Resume.pdf" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-pdf"></i> Resume (PDF)</a>
+        <div class="card">
+            <div class="card-meta">
+                <span>Enterprise analytics</span><span class="sep">/</span><span>Sarepta Therapeutics</span>
             </div>
-            <p class="colophon">Built with HTML/CSS • Assisted by Gemini</p>
-        </footer>
-    </div>
+            <h3><a href="case-studies.html#reporting-platform">Rebuilding Enterprise Reporting Around Self-Service</a></h3>
+            <p>Owned the full lifecycle of automated reporting — requirements through production publication and daily refresh — across Procurement, Drug Safety, and Quality.</p>
+            <div class="outcome"><strong>$150K+ in annual savings</strong> from a single platform migration, plus <strong>20+ hours per week</strong> returned to Procurement through secure self-service access.</div>
+        </div>
 
+        <p style="margin-top:1.5rem;"><a href="case-studies.html">All case studies →</a></p>
+    </section>
+
+    <section id="contact">
+        <h2>Get in Touch</h2>
+        <p>Open to consulting engagements and conversations about data and AI work. The fastest way to reach me is email.</p>
+        <div class="btn-row" style="margin-top:1.25rem;">
+            <a href="contact.html" class="btn"><i class="fa-solid fa-paper-plane"></i> Open Contact Form</a>
+            <a href="mailto:cpbeganski@gmail.com" class="btn btn-outline"><i class="fa-solid fa-envelope"></i> cpbeganski@gmail.com</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="links">
+            <a href="mailto:cpbeganski@gmail.com"><i class="fa-solid fa-envelope"></i> Email</a>
+            <a href="https://www.linkedin.com/in/chris-beganski/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+            <a href="https://www.bghscout.com" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-magnifying-glass"></i> BGH Scout</a>
+            <a href="Beganski_Christopher_Resume.pdf" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-pdf"></i> Resume (PDF)</a>
+        </div>
+        <p class="colophon">&copy; 2026 Christopher Beganski · Littleton, MA</p>
+    </footer>
+
+</div>
 </body>
 </html>

@@ -1,0 +1,518 @@
+/* ==========================================================================
+   Christopher Beganski — portfolio stylesheet
+   Single shared stylesheet for all pages.
+   ========================================================================== */
+
+:root {
+    color-scheme: light;
+
+    /* Ink */
+    --ink:        #16202B;  /* headings, strong text */
+    --body:       #45566B;  /* body copy */
+    --muted:      #6B7C91;  /* meta, captions */
+
+    /* Surface */
+    --paper:      #FFFFFF;
+    --wash:       #F5F7F9;  /* section tint */
+    --wash-deep:  #EDF1F5;
+
+    /* Accent */
+    --accent:     #14657E;
+    --accent-dk:  #0E4A5D;
+    --accent-wash:#E6F0F4;
+
+    /* Line */
+    --rule:       #E1E8EE;
+    --rule-dk:    #C9D4DE;
+
+    --maxw: 820px;
+    --radius: 6px;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html {
+    overflow-y: scroll;              /* stop layout shift between pages */
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    background: var(--paper);
+    color: var(--body);
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-size: 1rem;
+    line-height: 1.65;
+    padding: 1.5rem;
+    -webkit-font-smoothing: antialiased;
+    font-variant-numeric: tabular-nums;
+}
+
+.container { max-width: var(--maxw); margin: 0 auto; }
+
+/* ---------- Masthead ------------------------------------------------------ */
+
+header { padding-top: 0.5rem; }
+
+.header-content {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+.profile-img {
+    width: 84px;
+    height: 84px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: 50% 14%;        /* keep the face centred in the circle */
+    border: 1px solid var(--rule-dk);
+    flex-shrink: 0;
+    display: block;
+}
+
+.header-text h1 {
+    font-size: 1.75rem;
+    line-height: 1.15;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: var(--ink);
+}
+
+.header-text .subtitle {
+    margin-top: 0.3rem;
+    font-size: 0.95rem;
+    color: var(--muted);
+}
+
+.header-text .location {
+    margin-top: 0.15rem;
+    font-size: 0.85rem;
+    color: var(--muted);
+}
+
+/* ---------- Navigation ---------------------------------------------------- */
+
+.work-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 1.5rem 0 2.5rem;
+    padding: 0.5rem 0;
+    border-top: 1px solid var(--rule);
+    border-bottom: 1px solid var(--rule);
+}
+
+.work-nav a {
+    font-size: 0.78rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--muted);
+    text-decoration: none;
+    padding: 0.55rem 0.35rem;
+    border-bottom: 2px solid transparent;
+    transition: color 0.15s ease, border-color 0.15s ease;
+    white-space: nowrap;
+}
+
+.work-nav a:hover,
+.work-nav a:focus-visible { color: var(--accent); }
+
+.work-nav a.active {
+    color: var(--ink);
+    border-bottom-color: var(--accent);
+}
+
+/* ---------- Sections ------------------------------------------------------ */
+
+section { margin-bottom: 3.25rem; }
+
+h2 {
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.11em;
+    color: var(--accent);
+    margin-bottom: 1.1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--rule);
+}
+
+h3 {
+    font-size: 1.12rem;
+    font-weight: 650;
+    line-height: 1.35;
+    letter-spacing: -0.01em;
+    color: var(--ink);
+    margin-bottom: 0.4rem;
+}
+
+h4 {
+    font-size: 0.95rem;
+    font-weight: 650;
+    color: var(--ink);
+    margin-bottom: 0.3rem;
+}
+
+p { margin-bottom: 1rem; }
+p:last-child { margin-bottom: 0; }
+
+.lede {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: var(--ink);
+}
+
+a { color: var(--accent); }
+a:hover { color: var(--accent-dk); }
+
+strong { color: var(--ink); font-weight: 650; }
+
+/* ---------- Stat strip ---------------------------------------------------- */
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1px;
+    background: var(--rule);
+    border: 1px solid var(--rule);
+    border-radius: var(--radius);
+    overflow: hidden;
+}
+
+.stat {
+    background: var(--wash);
+    padding: 1.1rem 1rem;
+}
+
+.stat .figure {
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -0.03em;
+    color: var(--ink);
+}
+
+.stat .label {
+    display: block;
+    margin-top: 0.35rem;
+    font-size: 0.78rem;
+    line-height: 1.4;
+    color: var(--muted);
+}
+
+/* ---------- Work / project cards ------------------------------------------ */
+
+.card {
+    border: 1px solid var(--rule);
+    border-radius: var(--radius);
+    padding: 1.35rem 1.4rem;
+    margin-bottom: 1rem;
+    transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.card:hover {
+    border-color: var(--rule-dk);
+    box-shadow: 0 1px 3px rgba(22, 32, 43, 0.06);
+}
+
+.card.featured {
+    border-left: 3px solid var(--accent);
+    background: linear-gradient(to right, var(--wash), var(--paper) 55%);
+}
+
+.card-meta {
+    font-size: 0.72rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--muted);
+    margin-bottom: 0.5rem;
+}
+
+.card-meta .sep { color: var(--rule-dk); margin: 0 0.4rem; }
+
+.card h3 a { text-decoration: none; color: var(--ink); }
+.card h3 a:hover { color: var(--accent); }
+
+.card p { font-size: 0.95rem; }
+
+/* Outcome callout inside a card */
+.outcome {
+    margin-top: 0.9rem;
+    padding: 0.7rem 0.9rem;
+    background: var(--accent-wash);
+    border-radius: 4px;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: var(--ink);
+}
+
+.outcome strong { font-weight: 700; }
+
+/* Detail list used inside case studies */
+ul.detail {
+    list-style: none;
+    margin: 0.9rem 0 0;
+}
+
+ul.detail li {
+    position: relative;
+    padding-left: 1.1rem;
+    margin-bottom: 0.55rem;
+    font-size: 0.95rem;
+    line-height: 1.55;
+}
+
+ul.detail li:last-child { margin-bottom: 0; }
+
+ul.detail li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.62em;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--accent);
+}
+
+/* Stage list — numbered pipeline steps */
+ol.stages {
+    list-style: none;
+    counter-reset: stage;
+    margin: 1rem 0 0;
+}
+
+ol.stages li {
+    counter-increment: stage;
+    position: relative;
+    padding-left: 2.1rem;
+    margin-bottom: 0.8rem;
+    font-size: 0.95rem;
+    line-height: 1.55;
+}
+
+ol.stages li:last-child { margin-bottom: 0; }
+
+ol.stages li::before {
+    content: counter(stage);
+    position: absolute;
+    left: 0;
+    top: 0.1em;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    background: var(--accent);
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ---------- Skill / tool tags --------------------------------------------- */
+
+.tag-group { margin-bottom: 1.4rem; }
+.tag-group:last-child { margin-bottom: 0; }
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-top: 0.5rem;
+}
+
+.tags span {
+    font-size: 0.78rem;
+    line-height: 1.4;
+    color: var(--body);
+    background: var(--wash);
+    border: 1px solid var(--rule);
+    border-radius: 100px;
+    padding: 0.2rem 0.65rem;
+}
+
+/* ---------- Roles (experience list) --------------------------------------- */
+
+.role {
+    padding-bottom: 1.4rem;
+    margin-bottom: 1.4rem;
+    border-bottom: 1px solid var(--rule);
+}
+
+.role:last-child { border-bottom: 0; margin-bottom: 0; padding-bottom: 0; }
+
+.role-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 0.15rem;
+}
+
+.role .org { display: block; font-size: 0.9rem; color: var(--muted); }
+.role-head .dates {
+    font-size: 0.8rem;
+    color: var(--muted);
+    white-space: nowrap;
+}
+
+/* ---------- Buttons ------------------------------------------------------- */
+
+.btn-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    font-size: 0.88rem;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 0.65rem 1.15rem;
+    border-radius: var(--radius);
+    border: 1px solid var(--accent);
+    background: var(--accent);
+    color: #fff;
+    transition: background 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+}
+
+.btn:hover { background: var(--accent-dk); border-color: var(--accent-dk); color: #fff; }
+
+.btn-outline {
+    background: transparent;
+    color: var(--accent);
+}
+
+.btn-outline:hover { background: var(--accent-wash); color: var(--accent-dk); }
+
+/* ---------- Contact form -------------------------------------------------- */
+
+.contact-form { display: grid; gap: 1rem; }
+
+.field label {
+    display: block;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 0.35rem;
+}
+
+.field input,
+.field textarea {
+    width: 100%;
+    font-family: inherit;
+    font-size: 0.95rem;
+    color: var(--ink);
+    background: var(--paper);
+    border: 1px solid var(--rule-dk);
+    border-radius: var(--radius);
+    padding: 0.65rem 0.8rem;
+    transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.field textarea { min-height: 150px; resize: vertical; }
+
+.field input:focus,
+.field textarea:focus {
+    outline: none;
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px var(--accent-wash);
+}
+
+/* ---------- Notes / callouts ---------------------------------------------- */
+
+.note {
+    background: var(--wash);
+    border-left: 3px solid var(--rule-dk);
+    border-radius: 0 var(--radius) var(--radius) 0;
+    padding: 0.9rem 1.1rem;
+    font-size: 0.9rem;
+    color: var(--muted);
+}
+
+/* ---------- Footer -------------------------------------------------------- */
+
+footer {
+    margin-top: 3.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--rule);
+}
+
+footer .links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.5rem;
+    margin-bottom: 1rem;
+}
+
+footer .links a {
+    font-size: 0.85rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--body);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+footer .links a:hover { color: var(--accent); }
+
+.colophon { font-size: 0.78rem; color: var(--muted); }
+
+/* ---------- Focus visibility ---------------------------------------------- */
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+    border-radius: 2px;
+}
+
+/* ---------- Responsive ---------------------------------------------------- */
+
+@media (max-width: 640px) {
+    body { padding: 1rem; }
+
+    .header-content { gap: 1rem; }
+    .profile-img { width: 64px; height: 64px; }
+    .header-text h1 { font-size: 1.4rem; }
+
+    .work-nav {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 0 1.1rem;
+        margin: 1.25rem 0 2rem;
+    }
+
+    .work-nav a { padding: 0.45rem 0; font-size: 0.74rem; }
+
+    .card { padding: 1.1rem; }
+    .role-head .dates { width: 100%; }
+    .btn-row .btn { flex: 1 1 auto; justify-content: center; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after { transition-duration: 0.01ms !important; }
+}
+
+/* ---------- Print --------------------------------------------------------- */
+
+@media print {
+    .work-nav, footer, .btn-row { display: none; }
+    body { padding: 0; color: #000; }
+}
